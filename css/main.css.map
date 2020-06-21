@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AIUA,AFCA,EEDE;AACF,EAAE;AACF,EAAE,CFDe;EACf,UAAU,EAAE,GAAG;EACf,aAAa,EAAE,GAAG;CACnB;;AEdD,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,CAAC;AACD,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,QAAQ,CAAC;EACR,UAAU,EAAE,OAAO;CACpB",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/utils/_placeholders.scss",
+        "../sass/utils/_mixins.scss",
+        "../sass/base/_general.scss",
+        "../sass/components/_page-header.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

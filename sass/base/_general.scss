@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul,
+h1,
+h2 {
+  @extend %marginTopBottom;
+}
+
+body {
+  user-select: none;
+  background-color: $white;
+  color: $primary-text-color;
+
+  padding-top: 80px;
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
