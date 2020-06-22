@@ -1,1 +1,382 @@
-/* No CSS *//*# sourceMappingURL=portfolio.css.map */
+@charset "UTF-8";
+ul,
+h1,
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #ffffff;
+  color: #757575;
+  padding-top: 80px;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #212121;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-right: 86px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo-color {
+  color: #2196f3;
+}
+
+a.mail,
+a.phone {
+  color: #757575;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  min-height: 80px;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.header-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-left: 0px;
+}
+
+.header-style .link,
+.header-style .mail,
+.header-style .phone {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-style .link:hover, .header-style .link:focus,
+.header-style .mail:hover,
+.header-style .mail:focus,
+.header-style .phone:hover,
+.header-style .phone:focus {
+  color: #2196f3;
+  cursor: pointer;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
+  display: block;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.site-nav .link.current-index {
+  color: #2196f3;
+}
+
+.site-nav .link {
+  display: block;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.site-nav .link.current-index {
+  color: #2196f3;
+}
+
+.site-nav .link.current-index::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+}
+
+.contacts .item + .item {
+  margin-left: 30px;
+}
+
+.contacts {
+  margin-left: auto;
+}
+
+.main-nav,
+.header-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.envelope-icon,
+.phone-icon {
+  padding: 0;
+  border: none;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.mail,
+.phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-style.mail .envelope-icon {
+  color: #2196f3;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px 30px;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  border: none;
+  color: #ffffff;
+  background-color: #2196f3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover, .button:focus {
+  background-color: #1d74bb;
+  cursor: pointer;
+}
+
+.subscribe-button {
+  padding: 10px 28px;
+  margin-left: 12px;
+  overflow: hidden;
+}
+
+.subscribe-button::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 10px;
+  background-image: url(../images/6footer/button-icon.svg);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button:hover::after, .subscribe-button:focus::after {
+  -webkit-transform: translateY(-40px) translateX(30px);
+          transform: translateY(-40px) translateX(30px);
+}
+
+footer {
+  background-color: #2f303a;
+  padding-top: 56px;
+}
+
+.logo-footer {
+  padding: 0px;
+  margin-right: 0px;
+  font-size: 22px;
+  line-height: 1.18;
+  color: #ffffff;
+}
+
+.contacts-container .mail-footer,
+.contacts-container .phone-footer {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0px;
+}
+
+.contacts-container .mail-footer {
+  margin-bottom: 9px;
+}
+
+.contacts-container .address {
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 9px;
+}
+
+.bottom {
+  text-align: center;
+  padding-bottom: 21px;
+  padding-top: 18px;
+  margin: 0px;
+  font-size: 12px;
+  line-height: 2;
+}
+
+.footer-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.socials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 56px;
+}
+
+.socials-list .item + .item {
+  margin-left: 11px;
+}
+
+.icon-bg-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  color: #ffffff;
+  background-color: #45454f;
+  border-radius: 50%;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-bg-footer:hover, .icon-bg-footer:focus {
+  background-color: #2196f3;
+}
+
+.socials-container {
+  margin-left: 69px;
+  margin-top: 4px;
+}
+
+.icon-footer {
+  fill: currentColor;
+}
+
+/* ФОРМА ПОДПИСКИ*/
+.form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.subscribe-form label,
+.text-footer {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.text-footer {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.subscribe-container {
+  width: 570px;
+  margin-left: 94px;
+}
+
+.subscribe-form input {
+  width: 358px;
+  height: 50px;
+  padding: 0px 12px;
+  font-size: 16px;
+  line-height: 1.87;
+  background-color: #2f303a;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-form input:focus {
+  outline: none;
+  border: 1px solid #dfdfdf;
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*# sourceMappingURL=portfolio.css.map */

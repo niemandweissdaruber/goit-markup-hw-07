@@ -1,0 +1,26 @@
+.invisible-title {
+  @extend %visually-hidden;
+}
+
+.section {
+  padding-bottom: 94px;
+}
+
+.advantages {
+  padding-top: 120px;
+}
+
+.add-padding {
+  padding-top: 94px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+
+  color: $secondary-text-color;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}

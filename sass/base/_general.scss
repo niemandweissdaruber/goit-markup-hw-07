@@ -16,7 +16,7 @@ h2 {
 
 body {
   user-select: none;
-  background-color: $white;
+  background-color: $white-color;
   color: $primary-text-color;
 
   padding-top: 80px;
@@ -25,4 +25,21 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: $secondary-text-color;
 }

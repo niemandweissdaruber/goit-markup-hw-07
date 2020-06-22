@@ -1,0 +1,81 @@
+.background {
+  background-color: #f5f4fa;
+}
+
+.team-img {
+  margin-bottom: 30px;
+}
+
+.names {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  color: $secondary-text-color;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.profession {
+  margin-top: 0px;
+  margin-bottom: 28px;
+
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list .item + .item {
+  margin-left: 30px;
+}
+
+.team-list > .item {
+  background-color: $white-color;
+  text-align: center;
+
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.icons-list .item + .item {
+  margin-left: 10px;
+}
+
+.icons-list .item {
+  cursor: pointer;
+}
+
+.icons-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.icon-bg-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  background-color: $white-color;
+  border-radius: 50%;
+
+  @include transition(color);
+  @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+  }
+}
+
+.icon-team {
+  fill: currentColor;
+}

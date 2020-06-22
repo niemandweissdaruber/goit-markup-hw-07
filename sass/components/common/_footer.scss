@@ -1,0 +1,131 @@
+footer {
+  background-color: #2f303a;
+  padding-top: 56px;
+}
+
+.logo-footer {
+  padding: 0px;
+  margin-right: 0px;
+
+  font-size: 22px;
+  line-height: 1.18;
+  color: $white-color;
+}
+
+.contacts-container .mail-footer,
+.contacts-container .phone-footer {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0px;
+}
+
+.contacts-container .mail-footer {
+  margin-bottom: 9px;
+}
+
+.contacts-container .address {
+  color: $white-color;
+  margin-top: 10px;
+  margin-bottom: 9px;
+}
+
+.bottom {
+  text-align: center;
+  padding-bottom: 21px;
+  padding-top: 18px;
+  margin: 0px;
+
+  font-size: 12px;
+  line-height: 2;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.socials-list {
+  display: flex;
+  margin-bottom: 56px;
+}
+
+.socials-list .item + .item {
+  margin-left: 11px;
+}
+
+.icon-bg-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  color: $white-color;
+  background-color: #45454f;
+  border-radius: 50%;
+
+  @include transition(background-color);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.socials-container {
+  margin-left: 69px;
+  margin-top: 4px;
+}
+
+.icon-footer {
+  fill: currentColor;
+}
+
+/* ФОРМА ПОДПИСКИ*/
+
+.form-wrapper {
+  display: flex;
+
+  margin-top: 20px;
+}
+
+.subscribe-form label,
+.text-footer {
+  color: $white-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.text-footer {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.subscribe-container {
+  width: 570px;
+  margin-left: 94px;
+}
+
+.subscribe-form input {
+  width: 358px;
+  height: 50px;
+  padding: 0px 12px;
+  font-size: 16px;
+  line-height: 1.87;
+
+  background-color: #2f303a;
+  color: $white-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:focus {
+    outline: none;
+    border: 1px solid rgb(223, 223, 223);
+
+    @include transition(border);
+  }
+}
