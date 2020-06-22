@@ -1,14 +1,19 @@
 .logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-
   margin-right: 86px;
   padding-top: 24px;
   padding-bottom: 25px;
+  @extend %logo-style;
 }
 
 .logo-color {
   color: $accent-color;
+}
+
+.logo-footer {
+  padding: 0px;
+  margin-right: 0px;
+
+  @extend %logo-style;
+
+  color: $white-color;
 }

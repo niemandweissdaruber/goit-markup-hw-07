@@ -16,6 +16,13 @@ h2 {
   margin-bottom: 0px;
 }
 
+.logo, .logo-footer {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -60,10 +67,6 @@ a {
 }
 
 .logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   margin-right: 86px;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -71,6 +74,12 @@ a {
 
 .logo-color {
   color: #2196f3;
+}
+
+.logo-footer {
+  padding: 0px;
+  margin-right: 0px;
+  color: #ffffff;
 }
 
 a.mail,
@@ -254,14 +263,6 @@ a.phone {
 footer {
   background-color: #2f303a;
   padding-top: 56px;
-}
-
-.logo-footer {
-  padding: 0px;
-  margin-right: 0px;
-  font-size: 22px;
-  line-height: 1.18;
-  color: #ffffff;
 }
 
 .contacts-container .mail-footer,
