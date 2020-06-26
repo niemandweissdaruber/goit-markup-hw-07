@@ -63,66 +63,6 @@
             для вашего бизнеса
           </h1>
           <button data-modal-open class="button">Заказать услугу</button>
-
-          <!-- Модальное окно -->
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <button data-modal-close class="button-close"></button>
-              <form class="form" autocomplete="off">
-                <strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
-
-                <label class="form-field">
-                  <input class="form-input" type="text" name="name" placeholder=" " />
-                  <span class="form-label">Имя</span>
-                  <svg class="icon" width="18" height="18">
-                    <use href="./images/sprite.svg#name"></use>
-                  </svg>
-                </label>
-
-                <label class="form-field">
-                  <input class="form-input" type="tel" name="tel" placeholder=" " />
-                  <span class="form-label">Телефон</span>
-                  <svg class="icon" width="18" height="18">
-                    <use href="./images/sprite.svg#tel"></use>
-                  </svg>
-                </label>
-
-                <label class="form-field">
-                  <input
-                    class="form-input"
-                    type="mail"
-                    name="mail"
-                    placeholder=" "
-                    autocomplete="on"
-                  />
-                  <span class="form-label">Почта</span>
-                  <svg class="icon" width="18" height="18">
-                    <use href="./images/sprite.svg#mail"></use>
-                  </svg>
-                </label>
-
-                <label class="form-field">
-                  <textarea
-                    class="form-input comment-input"
-                    name="comment"
-                    placeholder=" "
-                  ></textarea>
-                  <span class="comment-label">Комментарий</span>
-                </label>
-
-                <label class="checkbox-area">
-                  <input class="check-input" type="checkbox" name="policy" value="policy" />
-                  <span class="checkbox"></span>
-                  <span class="policy">
-                    Соглашаюсь с рассылкой и принимаю
-                    <a href="">Условия договора</a>
-                  </span>
-                </label>
-
-                <button type="submit" class="button">Отправить</button>
-              </form>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -477,6 +417,56 @@
       </div>
       <p class="bottom">2020 | Developed by GoIT Students</p>
     </footer>
+
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="button-close"></button>
+        <form class="form" autocomplete="off">
+          <strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
+
+          <label class="form-field">
+            <input class="form-input" type="text" name="name" placeholder=" " />
+            <span class="form-label">Имя</span>
+            <svg class="icon" width="18" height="18">
+              <use href="./images/sprite.svg#name"></use>
+            </svg>
+          </label>
+
+          <label class="form-field">
+            <input class="form-input" type="tel" name="tel" placeholder=" " />
+            <span class="form-label">Телефон</span>
+            <svg class="icon" width="18" height="18">
+              <use href="./images/sprite.svg#tel"></use>
+            </svg>
+          </label>
+
+          <label class="form-field">
+            <input class="form-input" type="mail" name="mail" placeholder=" " autocomplete="on" />
+            <span class="form-label">Почта</span>
+            <svg class="icon" width="18" height="18">
+              <use href="./images/sprite.svg#mail"></use>
+            </svg>
+          </label>
+
+          <label class="form-field">
+            <textarea class="form-input comment-input" name="comment" placeholder=" "></textarea>
+            <span class="comment-label">Комментарий</span>
+          </label>
+
+          <label class="checkbox-area">
+            <input class="check-input" type="checkbox" name="policy" value="policy" />
+            <span class="checkbox"></span>
+            <span class="policy">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="">Условия договора</a>
+            </span>
+          </label>
+
+          <button type="submit" class="button">Отправить</button>
+        </form>
+      </div>
+    </div>
 
     <script src="./js/modal.js"></script>
   </body>
